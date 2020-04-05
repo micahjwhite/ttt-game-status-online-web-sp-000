@@ -18,7 +18,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.select do |win_array|
     win_array.select do |position|
-      position == "X"
+      position.is_a
     end
   end
 end
