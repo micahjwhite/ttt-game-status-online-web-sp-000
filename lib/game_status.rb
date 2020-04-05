@@ -72,7 +72,7 @@ def winner(board)
     position_3 = board[win_index_3]
       if win_combination.include?("X")
         return "X"
-      else
+      elsif win_combination.include?("O")
         return "O"
       end
   end
