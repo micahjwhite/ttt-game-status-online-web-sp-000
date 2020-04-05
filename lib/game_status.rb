@@ -31,13 +31,19 @@ def won?(board)
   return false
 end
      
-def full?(board)
-  board.any? do |position|
-    if position != "X" || position != "O"
-      return false
+def full?(array)
+  counter = 0
+  array.each do |element|
+    if (element == "X" || element == "O")
+      counter += 1
     else
-      return true
+      # do nothing
     end
+  end
+  if counter == 9
+    return true
+  else
+    return false
   end
 end
 
