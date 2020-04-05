@@ -32,6 +32,6 @@ def won?(board)
 end
      
 def full?(board)
-  board
+  board.any?
   
 end
