@@ -32,11 +32,6 @@ def won?(board)
 end
      
 def full?(board)
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " ", ].each do |position|
-    if position == "X" || position == "O"
-      return true
-    else
-      return false
-    end
-  end  
+  counter = 0
+  
 end
