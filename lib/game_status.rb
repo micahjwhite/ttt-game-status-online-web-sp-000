@@ -37,7 +37,6 @@ def full?(array)
     if (element == "X" || element == "O")
       counter += 1
     else
-      # do nothing
     end
   end
   if counter == 9
