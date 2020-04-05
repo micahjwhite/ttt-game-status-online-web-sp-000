@@ -70,6 +70,10 @@ def winner(board)
     position_1 = board[win_index_1]
     position_2 = board[win_index_2]
     position_3 = board[win_index_3]
-      if win_combination.detect
+      if win_combination.include?("X")
+        return "X"
+      else
+        return "O"
+      end
   end
 end
