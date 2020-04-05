@@ -32,7 +32,7 @@ def won?(board)
 end
      
 def full?(board)
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " ", ].all? do |position|
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " ", ].each do |position|
     if position == "X" || position == "O"
       return true
     else
